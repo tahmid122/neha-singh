@@ -1,0 +1,387 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.dotted-hr{
+    border: 6px dotted white;
+    border-bottom: none;
+    text-align: center;
+    width: 80px;
+}
+/* Head start Here */
+
+
+h1, h2{
+    text-align: center;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+.head::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.head{
+    background-color: cadetblue;
+    text-align: center;
+}
+.head-menu a{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(68, 106, 107);
+    padding: 10px;
+    border-radius: 20px;
+}
+.head-menu a:hover{
+    background-color: gray;
+}
+/* Head End Here Here */
+
+/* Intro Section Start */
+
+.intro{
+    padding: 120px 30px;
+    text-align: center;
+    position: relative;
+    background-image: url(neha1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+.intro-desc {
+    box-sizing: border-box;
+}
+.intro-desc h2{
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+.intro-desc p{
+    text-align: center;
+}
+.weather-logo{
+    width: 100px;
+}
+.weather-logo1{
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 40px;
+}
+.weather-logo{
+    transition: width 2s, transform 2s;
+}
+.weather-logo:hover{
+    width: 100px;
+    transform: rotate(360deg);
+}
+.weather-logo2{
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+.intro::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* Intro Section End */
+
+/* About ME Section start  */
+
+.about-me{
+    background-color: cadetblue;
+    color: white;
+    margin: -20px;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.about-me h2{
+    padding-top: 25px;
+}
+.about-pic{
+
+}
+.about-pic img{
+    width: 300px;
+    height: 300px;
+    border-top: 5px solid red;
+    border-bottom: 5px solid orange;
+    border-left: 5px solid black;
+    border-right: 5px solid greenyellow;
+    border-radius: 50%;
+    margin-top: 50px;
+    transition: transform 3s;
+}
+.about-pic img:hover{
+    transform: rotate(360deg);
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.about-desc{
+    text-align: center;
+}
+.about-desc p{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-desc a{
+    text-decoration: none;
+    color: white;
+}
+/* About ME Section End  */
+
+/* Skill Section Start */
+
+
+
+.skill-section::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.skill-section{
+    padding: 1% 7%;
+    color: white;
+
+}
+.card{
+    text-align: center;
+    background-color: black;
+    margin-top: 25px;
+    border-radius: 5px;
+ 
+    
+}
+.card:hover{
+    box-shadow: 8px 12px 18px blue;
+}
+.card-desc{
+    padding: 0 15px;
+}
+.card h2{
+    background-color: gray;
+    padding: 5px;
+}
+.card p{
+    text-align: left;
+}
+.card-logo img{
+    border: 3px white solid;
+    border-radius: 50%;
+    width: 100px;
+    padding: 15px;
+    margin-top: 8px;
+}
+
+.skill-section{
+    background-image: url(images/neha2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+.progress-bar{
+    text-align: left;
+    height: 360px;
+}
+.progress-bar li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 50px 0;
+    position: relative;
+}
+
+.progress-bar li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+    border-radius: 100px;
+    top: calc(100% + 5px);
+    left: 0;
+}
+
+.progress-bar li::after{
+    content: '';
+    position: absolute;
+    width:0 ;
+    height: 20px;
+    background-color: red;
+    border-radius: 100px;
+    top: calc(100% + 5px);
+    left: 0;
+
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    transition: width 3s;
+
+}
+
+.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: blue;
+    }
+}
+
+.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+        background-color: blue;
+    }
+}
+
+.java::after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        width: 70%;
+        background-color: blue;
+    }
+}
+
+.python::after{
+    animation-name: python;
+}
+@keyframes python{
+    to{
+        width: 60%;
+        background-color: blue;
+    }
+}
+
+.boot::after{
+    animation-name: boot;
+}
+@keyframes boot{
+    to{
+        width: 50%;
+        background-color: blue;
+    }
+}
+
+.progress-bar ul{
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+/* Skill Section End */
+
+/* Contact Section Start */
+.contact-section{
+    background-color: cadetblue;
+    padding: 1% 7%;
+    text-align: center;
+}
+.achivement{
+    padding: 10px;
+}
+.achivement p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+.btn{
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    margin: 0 10px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.contact-section::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.btn-link{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    width: 50px;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 5px;
+}
+.btn-link:hover{
+    color: white;
+    background-color: black;
+}
+/* Contact Section ENd*/
+
+/* Footer Section Start */
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.footer a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+.footer a:hover{
+    color: gray;
+}
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Footer Section End */

@@ -1,0 +1,91 @@
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Head start Here */
+
+.logo{
+    text-align: left;
+}
+.heading{
+    text-align: right;
+}
+.head-menu a{
+    display: inline;
+    background-color: transparent;
+    padding: 7px;
+    margin: 0 15px;
+}
+.head-menu{
+    margin-top: 30px;
+}
+.head-menu a:hover{
+    border-radius: 10px;
+}
+/* Head End Here Here */
+
+/* Intro Section Start */
+.intro-desc h2{
+    font-size: 4rem;
+}
+.intro-desc p{
+    font-size: 1.2rem;
+}
+/* Intro Section End */
+
+/* About ME Section start  */
+
+.about-desc{
+    text-align: left;
+}
+.about-pic img{
+    margin-top: 100px;
+}
+/* About ME Section End  */
+
+/* Skill Section Start */
+.skill-section{
+    padding: 1% 2%;
+    color: white;
+
+}
+
+/* Skill Section End */
+
+/* Contact Section Start */
+.contact{
+    padding-left: 50px ;
+}
+.contact-link{
+    position: relative;
+}
+.links{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 80px;
+    margin-top: 180px;
+}
+/* Contact Section ENd*/
+
+/* Footer Section Start */
+.footer-menu{
+    margin-top: 5px;
+}
+.footer a{
+    display:inline;
+    margin: 0 15px;
+}
+
+/* Footer Section End */
